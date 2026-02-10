@@ -177,8 +177,11 @@
         <ul>
           <li>
             <h4>
-              Vidéos et images gratuites et libres de droits ->
-              https://pixabay.com/fr/
+              Vidéos et images gratuites et libres de droits -> pixabay
+
+              <a href="https://pixabay.com/fr/" target="_blank"
+                >https://pixabay.com/fr/</a
+              >
             </h4>
             <p>Utiliser "Video" remplir la src:".//"</p>
             <p>
@@ -207,53 +210,143 @@
               texte a afficher.
             </p>
             <p>
-              Déclarer enfin un "input" de type "text" par exemple et dans "id"
-              utiliser la même chose que dans label pour lier les deux.
+              Déclarer enfin un "input" de type "text" et dans "id" utiliser la
+              même chose que dans label pour lier les deux.
             </p>
             <p>On peut tuiliser un placeholder="entrez votre texte"</p>
+            <form action="">
+              <label for="text">
+                Exemple: Formulaire de type texte
+                <input
+                  type="text"
+                  name=""
+                  id="text"
+                  placeholder="Votre texte ici"
+                />
+              </label>
+            </form>
           </li>
           <li>
             <h4>Input de type number</h4>
             <p>
-              Même chose que pour l'input text. On peut utiliser value="18" par
-              exemple pour commecer avec un nombre.
+              Délarer avec la balise "form" action="" peut rester libre pour
+              l'instant.
             </p>
+            <p>
+              Ensuite déclarer un "label" avec for="id de l'input" suivi du
+              texte a afficher.
+            </p>
+            <p>
+              Déclarer enfin un "input" de type "number" et dans "id" utiliser
+              la même chose que dans label pour lier les deux.
+            </p>
+            <p>
+              On peut utiliser value="18" par exemple pour commecer avec un
+              nombre.
+            </p>
+            <form action="">
+              <label for="age">
+                Exemple: Formulaire de type number
+                <input type="number" id="age" value="18" />
+              </label>
+            </form>
           </li>
           <li>
             <h4>Input de type select</h4>
-            <p>label idem que les autres types de formulaires</p>
             <p>
-              Utilier select id puis à la ligne les options avec option
-              value="Homme"
+              Déclarer un "label" avec for="id de l'input" suivi du texte a
+              afficher.
             </p>
-            <p>Rajouter la banière selected pour l'option par défaut.</p>
+            <p>
+              Déclarer "select" et dans "id" utiliser la même chose que dans
+              label pour lier les deux.
+            </p>
+            <p>
+              Dans "select" déclarer "option" pour chaque option remplir la
+              value et le texte à afficher.
+            </p>
+            <p>
+              Rajouter la banière selected="selected" devant "value" pour
+              l'option par défaut.
+            </p>
+            <form action="">
+              <label for="gender">Genre</label>
+              <select id="gender">
+                <option value="Homme">Homme</option>
+                <option selected="selected" value="Femme">Femme</option>
+                <option value="Autre">Autre</option>
+              </select>
+            </form>
           </li>
           <li>
             <h4>Input de type radio</h4>
             <p>
-              Copier le nombre de fois que nécessaire input et label avec le
-              même name="type"
+              Déclarer input de type radio avec le même "name" pour tous les
+              "radio" liés et même id pour chaque choix différent.
             </p>
             <p>
-              On peut utiliser "checked" après id pour qu'il soit selcetionné
-              par défaut.
+              Déclarer un "label" avec for="id de l'input" suivi du texte a
+              afficher.
             </p>
+            <p>
+              Copier le nombre de fois que nécessaire input et label avec le
+              même name et id différent à utiliser dans label.
+            </p>
+            <p>
+              On peut utiliser la balise "checked" après id pour qu'il soit
+              selcetionné par défaut.
+            </p>
+            <input type="radio" name="type" id="human" checked />
+            <label for="human">Humain</label>
+
+            <input type="radio" name="type" id="dog" />
+            <label for="dog">Chien</label>
+
+            <input type="radio" name="type" id="cat" />
+            <label for="cat">Chat</label>
           </li>
           <li>
             <h4>Input de type textarea</h4>
+            <p>Déclarer "textarea" on peut effacer "name=" et "id=".</p>
             <p>
-              Pas besoin de name, on peut mettre une placeholder="votre
-              message..." cols et row pour la taille
+              On peut rajouter "placeholder" pour afficher du texte dans la box.
             </p>
+            <p>
+              On peut rajouter "cols=#" et "rows=#" pour la taille de la
+              textarea.
+            </p>
+            <textarea
+              placeholder="Votre message..."
+              cols="30"
+              rows="1"
+            ></textarea>
           </li>
           <li>
             <h4>Input de type checkbox</h4>
-            <p>Faire correspondre id de l'input et for du label</p>
+            <p>
+              Déclarer un input de type checkbox on peut laisser le name vide.
+            </p>
+            <p>
+              Déclarer un "label" avec for="id de l'input" suivi du texte a
+              afficher.
+            </p>
+            <input type="checkbox" name="" id="cgv" />
+            <label for="cgv">Accepter les conditions générales:</label>
           </li>
           <li>
             <h4>Bouton pour valider</h4>
             <p>
-              input:submit dans value mettre le nom qui apparait sur le bouton.
+              Déclarer un input de type submit et mettre dans value ce qu'on
+              veut affficher.
+            </p>
+            <input
+              type="submit"
+              value="Ceci est le bouton pour valider le formulaire"
+            />
+          </li>
+          <li>
+            <p><h4>Pour que les différents boutons soient liés avec l'envoi il faut
+              qu'ils soient dans la même balise "form".</h4>
             </p>
           </li>
         </ul>
