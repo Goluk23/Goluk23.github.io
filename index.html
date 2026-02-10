@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cheat Sheet</title>
     <link rel="shortcut icon" href="./assets/img/logo.png" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>Cheat Sheet VSS, HTML, CSS, GITHUB, JS</h1>
@@ -353,6 +354,76 @@
               Pour que les différents boutons soient liés avec l'envoi il faut
               qu'ils soient dans la même balise "form".
             </h4>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <h2>CSS</h2>
+    <ul>
+      <li>
+        <h3>Créer un fichier style.css dans l'arborescence d'index.html</h3>
+        <h3>Intégrer une page CSS à Index.html</h3>
+        <h4>
+          En dessous de la balise Title mais toujours dans HEAD rajouter la
+          balise CSS.
+        </h4>
+        <h5>
+          Il faut rajouter la balise link:css et pointer vers le fichier CSS.
+        </h5>
+        <p>Exemple: link rel="stylesheet" href="/.style.css"</p>
+        <h5>
+          Vérifer que le lien est présent en ajoutant body puis background=red
+          pour vérifier que le body est rouge.
+        </h5>
+        <p>Exemple: body {background: red;}</p>
+      </li>
+      <li>
+        <h3>
+          Utilisation de CSS sur H1 (en considérant que c'est le seul H1 de la
+          page)
+        </h3>
+        <ul>
+          <li>
+            <h4>text-transform</h4>
+            <h5>text-transform: capitalize; -> Première lettre en Majuscule</h5>
+            <h5>
+              text-transform: uppercase; -> Toutes les lettres en Majuscule
+            </h5>
+          </li>
+          <li>
+            <h4>letter-spacing & font-size</h4>
+            <h5>
+              letter-spacing: #px; -> Espace entre les lettres en pixels (px)
+            </h5>
+            <h5>
+              text-align: center; -> Aligner le texte au mileu de la ligne
+            </h5>
+            <h5>font-size: 1rem; -> Taille du texte 1 rem (1rem = 16px)</h5>
+          </li>
+          <li>
+            <h4>text-shadow & color</h4>
+            <h5>
+              text-shadow: 0 0 0 black; -> définis pas d'ombre noire -> aller
+              dans inspecter -> text-shadow -> définir l'ombre voulue et
+              récupérer le code, sur couleur choisir l'opacité (recommandé à
+              +/-25%).
+            </h5>
+            <p>Exemple: text-shadow: 3px 3px 8px #00000042;</p>
+            <h4>Couleur du texte</h4>
+            <h5>color:black par exemple</h5>
+            <p>
+              On peut aussi utiliser les couleurs en rgba(255,255,255,1) r =
+              rouge, g = vert, b = bleu, a = opacité ( 1= full).
+            </p>
+            <p>Autres couleurs evec #eeeeee par exemple (#000000 = noir).</p>
+          </li>
+          <li>
+            <h4>Fonts (Polices)</h4>
+            <h5>Soit celles fournis par CSS</h5>
+            <h5>Soit sur Google Fonts</h5>
+            <h6>-> Soit copier le lien vers les fonts</h6>
+            <h6>-> Soit les télécharger</h6>
+            <p>Par défaut il faut les mettre au début du CSS.</p>
           </li>
         </ul>
       </li>
