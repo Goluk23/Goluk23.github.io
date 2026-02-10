@@ -8,163 +8,204 @@
   </head>
   <body>
     <h1>Cheat Sheet HTML, CSS, GITHUB, JS</h1>
+    <h2>VSS</h2>
+    <ul>
+      <li>
+        <h3>PLUGINS VSS CODE</h3>
+        <ul>
+          <li>
+            <h4>Live server</h4>
+            <p>Activer "Auto Save : onWindowChange"</p>
+            <p>Activer "World Wrap : on"</p>
+          </li>
+          <li>
+            <h4>One Dark Pro</h4>
+            <p>Définir "Workbench: Color Theme : One Dark Pro"</p>
+          </li>
+          <li>
+            <h4>Prettier - Code formatter</h4>
+            <p>
+              Définir "Configure Default Formatter : Prettier - Code formatter"
+            </p>
+            <p>Cocher "Format On Save"</p>
+            <p>Changer "Spaces" en 2 (Indent Using Sapces)</p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
     <h2>HTML</h2>
-    <h3>PLUGINS VSS CODE</h3>
-    <h4>Live server</h4>
-    <p>Activer "Auto Save : onWindowChange"</p>
-    <p>Activer "World Wrap : on"</p>
-    <h4>One Dark Pro</h4>
-    <p>Définir "Workbench: Color Theme : One Dark Pro"</p>
-    <h4>Prettier - Code formatter</h4>
-    <p>Définir "Configure Default Formatter : Prettier - Code formatter"</p>
-    <p>Cocher "Format On Save"</p>
-    <p>Changer "Spaces" en 2 (Indent Using Sapces)</p>
-    <h3>ICONE NAVIGATEUR</h3>
-    <h4>Chercher logo HTML -> Images -> Outils -> Couleur -> Transparent</h4>
-    <p>
-      Pour l'ajouter aller sous title -> taper link (link rel="stylesheet"
-      href="") apparait -> remplacer "stylesheet" par "shortcut icon" et
-      indiquer son chemin dans href="./..."
-    </p>
-    <p>Exemple: link rel="shortcut icon" href="./assets/img/logo.png"</p>
-    <h3>LES DIFFERENTES PARTIES D'UN SITE</h3>
-    <p>Principales: nav header main footer</p>
-    <p>Secondaires: section div span p i</p>
-    <h3>UL = Unordered List -> liste sans numéro (avec des puces)</h3>
-    <p>
-      Utilisation "UL" -> "LI" pour les élements à lister (possibilité
-      d'utiliser li*# où # = nombres de répetitions de LI)
-    </p>
-    <h3>OL = Ordered List -> Liste avec des numéros</h3>
-    <p>
-      Utilisation "OL" -> "LI" pour les élements à lister (possibilité
-      d'utiliser li*# où # = nombres de répetitions de LI)
-    </p>
-    <h3>IMAGE EN HTML</h3>
-    <p>
-      Utiliser "img" qui donne (img src="" alt="") indiquer son chemin dans
-      src="./..." et indiquer une description dans alt="".
-    </p>
-    <p>
-      Utilisation de height="200" par exemple est possible pour réduire sa
-      taille en HTML
-    </p>
+    <ul>
+      <li>
+        <h3>ICONE NAVIGATEUR</h3>
+        <h4>
+          Chercher logo HTML -> Images -> Outils -> Couleur -> Transparent
+        </h4>
+        <p>
+          Pour l'ajouter aller sous title -> taper link (link rel="stylesheet"
+          href="") apparait -> remplacer "stylesheet" par "shortcut icon" et
+          indiquer son chemin dans href="./..."
+        </p>
+        <p>Exemple: link rel="shortcut icon" href="./assets/img/logo.png"</p>
+      </li>
+      <li>
+        <h3>LES DIFFERENTES PARTIES D'UN SITE</h3>
+        <p>Principales: nav header main footer</p>
+        <p>Secondaires: section div span p i</p>
+      </li>
+      <li>
+        <h3>UL = Unordered List -> liste sans numéro (avec des puces)</h3>
+        <p>
+          Utilisation "UL" -> "LI" pour les élements à lister (possibilité
+          d'utiliser li*# où # = nombres de répetitions de LI)
+        </p>
+      </li>
+      <li>
+        <h3>OL = Ordered List -> Liste avec des numéros</h3>
+        <p>
+          Utilisation "OL" -> "LI" pour les élements à lister (possibilité
+          d'utiliser li*# où # = nombres de répetitions de LI)
+        </p>
+      </li>
+      <li>
+        <h3>IMAGE EN HTML</h3>
+        <p>
+          Utiliser "img" qui donne (img src="" alt="") indiquer son chemin dans
+          src="./..." et indiquer une description dans alt="".
+        </p>
+        <p>
+          Utilisation de height="200" par exemple est possible pour réduire sa
+          taille en HTML
+        </p>
+      </li>
+      <li>
+        <h3>TYPE DE TEXTE</h3>
+        <p>Normal, Italique balise "em", Gras balise "strong"</p>
+        <p>Faux texte en latin "lorem#" où # = nombre de mots à ajouter</p>
+      </li>
+      <li>
+        <h3>UTILISATION DES TABLEAUX</h3>
+        <p>
+          Utiliser "table" ajouter "border="#"" pour le voir. Exemple: table
+          border="4" et ajouter "cellpading="#"" pour créer un espacement à
+          l'intérieur des cellules et ajouter "cellspacing="#"" pour
+          l'espacement entre cellules
+        </p>
+        <p>Utiliser "thead" pour l'entête du tableau</p>
+        <p>Utiliser "tr" pour définir la ligne de l'entête</p>
+        <p>Utiliser "th" pour chaque colonne de l'entête</p>
+        <p>Utiliser "tbody" pour la suite du tableau</p>
+        <p>Utiliser "tr" pour chaque ligne du tableau</p>
+        <p>Utiliser "td" pour chaque colonne du tableau</p>
+        <p>Utiliser "tfoot" pour le pied du tableau avec "tr" et "td"</p>
+        <p>Utiliser "rowspan="#"" ou "colspan="#"" pour étendre une cellule</p>
+      </li>
+      <li>
+        <h3>UTILISATION DES LIENS</h3>
+        <p>
+          Taper "a" (pour ancre) remplir href="" et remplir par un texte entre
+          les balises
+        </p>
+        <p>Utiliser "target="_blank"" pour ouvrir dans un nouvel onglet</p>
+        <p>
+          Exemple: dans les balises a: href="https://htmlcheatsheet.com/"
+          target="_blank">HTML Cheat Sheet
+        </p>
+        <br />
+        <a href="https://htmlcheatsheet.com/" target="_blank"
+          >HTML Cheat Sheet</a
+        >
 
-    <h3>TYPE DE TEXTE</h3>
-    <p>Normal, Italique balise "em", Gras balise "strong"</p>
-    <p>Faux texte en latin "lorem#" où # = nombre de mots à ajouter</p>
+        <h4>Lien vers une autre partie du site</h4>
+        <p>Créer un id à la section vers laquelle on veut créer un lien</p>
+        <p>
+          Utiliser une encre a dans href="#id" où id est l'id est celui de la
+          section désirée
+        </p>
+      </li>
+      <li>
+        <h3>INTEGRATION DES VIDEOS</h3>
+        <h4>
+          Vidéos et images gratuites et libres de droits ->
+          https://pixabay.com/fr/
+        </h4>
+        <p>Utiliser "Video" remplir la src:".//"</p>
+        <p>
+          Paramètres à utiliser: "autoplay" "muted" "loop" et éventuellement
+          "height="200"
+        </p>
+        <p>
+          Exemple: video src="./assets/video/video.mp4" height="200" autoplay
+          muted
+        </p>
+        <!-- <video src="./assets/video/video.mp4" height="200" autoplay muted></video> -->
+      </li>
+      <li>
+        <h3>LES FORMULAIRES</h3>
+        <h4>Input de type text</h4>
+        <p>
+          Délarer avec la balise "form" action="" peut rester libre pour
+          l'instant.
+        </p>
+        <p>
+          Ensuite déclarer un "label" avec for="id de l'input" suivi du texte a
+          afficher.
+        </p>
+        <p>
+          Déclarer enfin un "input" de type "text" par exemple et dans "id"
+          utiliser la même chose que dans label pour lier les deux.
+        </p>
+        <p>on peut tuiliser un placeholder="entrez votre texte"</p>
 
-    <h3>UTILISATION DES TABLEAUX</h3>
-    <p>
-      Utiliser "table" ajouter "border="#"" pour le voir. Exemple: table
-      border="4" et ajouter "cellpading="#"" pour créer un espacement à
-      l'intérieur des cellules et ajouter "cellspacing="#"" pour l'espacement
-      entre cellules
-    </p>
-    <p>Utiliser "thead" pour l'entête du tableau</p>
-    <p>Utiliser "tr" pour définir la ligne de l'entête</p>
-    <p>Utiliser "th" pour chaque colonne de l'entête</p>
-    <p>Utiliser "tbody" pour la suite du tableau</p>
-    <p>Utiliser "tr" pour chaque ligne du tableau</p>
-    <p>Utiliser "td" pour chaque colonne du tableau</p>
-    <p>Utiliser "tfoot" pour le pied du tableau avec "tr" et "td"</p>
-    <p>Utiliser "rowspan="#"" ou "colspan="#"" pour étendre une cellule</p>
+        <h4>Input de type number</h4>
+        <p>
+          Même chose que pour l'input text. On peut utiliser value="18" par
+          exemple pour commecer avec un nombre.
+        </p>
 
-    <h3>UTILISATION DES LIENS</h3>
-    <p>
-      Taper "a" (pour ancre) remplir href="" et remplir par un texte entre les
-      balises
-    </p>
-    <p>Utiliser "target="_blank"" pour ouvrir dans un nouvel onglet</p>
-    <p>
-      Exemple: dans les balises a: href="https://htmlcheatsheet.com/"
-      target="_blank">HTML Cheat Sheet
-    </p>
-    <br />
-    <a href="https://htmlcheatsheet.com/" target="_blank">HTML Cheat Sheet</a>
+        <h4>Input de type select</h4>
+        <p>label idem que les autres types de formulaires</p>
+        <p>
+          Utilier select id puis à la ligne les options avec option
+          value="Homme"
+        </p>
+        <p>Rajouter la banière selected pour l'option par défaut.</p>
 
-    <h4>Lien vers une autre partie du site</h4>
-    <p>Créer un id à la section vers laquelle on veut créer un lien</p>
-    <p>
-      Utiliser une encre a dans href="#id" où id est l'id est celui de la
-      section désirée
-    </p>
+        <h4>Input de type radio</h4>
+        <p>
+          Copier le nombre de fois que nécessaire input et label avec le même
+          name="type"
+        </p>
+        <p>
+          On peut utiliser "checked" après id pour qu'il soit selcetionné par
+          défaut.
+        </p>
 
-    <h3>INTEGRATION DES VIDEOS</h3>
-    <h4>
-      Vidéos et images gratuites et libres de droits -> https://pixabay.com/fr/
-    </h4>
-    <p>Utiliser "Video" remplir la src:".//"</p>
-    <p>
-      Paramètres à utiliser: "autoplay" "muted" "loop" et éventuellement
-      "height="200"
-    </p>
-    <p>
-      Exemple: video src="./assets/video/video.mp4" height="200" autoplay muted
-    </p>
-    <!-- <video src="./assets/video/video.mp4" height="200" autoplay muted></video> -->
+        <h4>Input de type textarea</h4>
+        <p>
+          Pas besoin de name, on peut mettre une placeholder="votre message..."
+          cols et row pour la taille
+        </p>
 
-    <h3>LES FORMULAIRES</h3>
-    <h4>Input de type text</h4>
-    <p>
-      Délarer avec la balise "form" action="" peut rester libre pour l'instant.
-    </p>
-    <p>
-      Ensuite déclarer un "label" avec for="id de l'input" suivi du texte a
-      afficher.
-    </p>
-    <p>
-      Déclarer enfin un "input" de type "text" par exemple et dans "id" utiliser
-      la même chose que dans label pour lier les deux.
-    </p>
-    <p>on peut tuiliser un placeholder="entrez votre texte"</p>
+        <h4>Input de type checkbox</h4>
+        <p>Faire correspondre id de l'input et for du label</p>
 
-    <h4>Input de type number</h4>
-    <p>
-      Même chose que pour l'input text. On peut utiliser value="18" par exemple
-      pour commecer avec un nombre.
-    </p>
+        <h4>Bouton pour valider</h4>
+        <p>input:submit dans value mettre le nom qui apparait sur le bouton.</p>
 
-    <h4>Input de type select</h4>
-    <p>label idem que les autres types de formulaires</p>
-    <p>
-      Utilier select id puis à la ligne les options avec option value="Homme"
-    </p>
-    <p>Rajouter la banière selected pour l'option par défaut.</p>
+        <h4>Lien vers un Email</h4>
+        <p>
+          utiliser l'ancre a avec dans href="mailto:adresse@domain.ext suivi du
+          message du lien.
+        </p>
 
-    <h4>Input de type radio</h4>
-    <p>
-      Copier le nombre de fois que nécessaire input et label avec le même
-      name="type"
-    </p>
-    <p>
-      On peut utiliser "checked" après id pour qu'il soit selcetionné par
-      défaut.
-    </p>
-
-    <h4>Input de type textarea</h4>
-    <p>
-      Pas besoin de name, on peut mettre une placeholder="votre message..." cols
-      et row pour la taille
-    </p>
-
-    <h4>Input de type checkbox</h4>
-    <p>Faire correspondre id de l'input et for du label</p>
-
-    <h4>Bouton pour valider</h4>
-    <p>input:submit dans value mettre le nom qui apparait sur le bouton.</p>
-
-    <h4>Lien vers un Email</h4>
-    <p>
-      utiliser l'ancre a avec dans href="mailto:adresse@domain.ext suivi du
-      message du lien.
-    </p>
-
-    <h4>Lien vers un téléchargement</h4>
-    <p>
-      utiliser l'ancre a avec href="./chemin" download="Nom du téléchargement"
-      Télécharger la notice.
-    </p>
+        <h4>Lien vers un téléchargement</h4>
+        <p>
+          utiliser l'ancre a avec href="./chemin" download="Nom du
+          téléchargement" Télécharger la notice.
+        </p>
+      </li>
+    </ul>
 
     <h2>GITHUB</h2>
     <h3>
