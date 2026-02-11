@@ -16,3 +16,13 @@ h1 {
   color: #000000;
   font-family: "Poppins";
 }
+.flexbox {
+  height: 120px;
+  width: 90%;
+  background: rgba(125, 125, 125, 0.9);
+  margin: 0 auto;
+  border: 2px solid rgb(0, 140, 255);
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 0 20px 3px #81cfc6;
+  padding: 15px;
+}
