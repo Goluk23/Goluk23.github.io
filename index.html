@@ -459,7 +459,7 @@
       </li>
       <li>
         <h3>Les BOX</h3>
-        <h4>Ajouter une hauteur en px (exemple= height: 100px;) </h4>
+        <h4>Ajouter une hauteur minimum en px (exemple= min-height: 100px;) </h4>
         <h4>Ajouter une largeur en % (exemple= width: 90%;)</h4>
         <h4>Ajouter une couleur de fond (exemple= background: rgba(125, 125, 125, 0.9);)</h4>
         <h4>Pour centrer horizontalement la boite il faut rajouter= margin: 0 auto; </h4>
@@ -467,14 +467,47 @@
         <h4>On peut arrondir les bords avec= border-radius: #px (ou #px #px #px #px)</h4>
         <h4>On peut rajouter une ombre à la boite avec= box-shadow: 0 0 0 0 color;</h4>
         <h4>On peut ajouter une marge intérieure avec= padding: #px (ou #px #px #px #px) </h4>
-        <h4>Pour enlever les reglages de base des éléments rajouter * {margin:0; padding:0;}</h4>
-        <div class="flexbox">
-          <h4>Flexbox</h4>
-          <ul>
-            <li>boite 1</li>
-            <li>boite 2</li>
-            <li>boite 3</li>
-          </ul>
+        <h4>Pour enlever les reglages de base du titre h4= .box h4 {margin:0; padding:0;}</h4>
+            <div class="box">
+              <h4>Box</h4>
+          </div>
+      </li>
+      <li>
+        <h3>FLEXBOX</h3>
+        <h4>Pour les réglages dans UL cibler= .flexbox ul</h4>
+        <h4>Dans le parent direct des boite à aligner utilser= display flex</h4>
+        <p>Exemple: .flexbox ul {display: flex;}</p>
+        <h4>Pour aligner les éléments utiliser= justify-content: space-around; </h4>
+        <p>Exemple: .flexbox ul {justify-content: space-around;}</p>
+        <h5>Pour enlver le padding= .flexbox ul { padding: 0; } </h5>
+        <h4>Pour cibler les li de flexbox= .flexbox li</h4>
+        <h5>Pour enlver les puces devant les Li= list-style: none;</h5>
+        <h5>Pour centrer un unique élément verticalement et horizontalement dans une boite:</h5>
+        <p>Utiliser= display: flex; / justify-content: center; / align-item: center;</p>
+        <div class="box">
+          <div class="flexbox">
+            <h4>Flexbox</h4>
+            <ul>
+              <li>boite 1</li>
+              <li>boite 2</li>
+              <li>boite 3</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <h3>GRID</h3>
+        <div class="box">
+          <div class="grid">
+            <h4>Grid</h4>
+            <div class="grid-container">
+              <ul>
+                <li>boite 1</li>
+                <li>boite 2</li>
+                <li>boite 3</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </li>
     </ul>
