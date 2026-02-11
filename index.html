@@ -371,7 +371,7 @@
       </li>
       <li><h3>LES CLASSES</h3>
         <h4>Déclarer une divison avec une classe = .nomdelaclasse</h4>
-        <p>Exemple: .flexbox donne div class="flexbox" div</p>
+        <p>Exemple: .flexbox => div class="flexbox" div</p>
         <h4>Ou la déclarer class="nom de la classe"</h4>
         <p>Exemple: class="flexbox"</p>
       </li>
@@ -497,16 +497,25 @@
       </li>
       <li>
         <h3>GRID</h3>
+        <h4>Pour les réglages dans UL cibler= .grid ul</h4>
+        <h4>Dans le parent direct des boite à aligner utilser= display grid</h4>
+        <p>Exemple: .grid ul {display: grid;}</p>
+        <h4>Pour déterminer les proportions des grilles utiliser= grid-template-columns: % ou fr</h4>
+        <p>Exemple: .grid ul {grid-template-columns: 25% 30% 45%;} ou {grid-template-columns: 1fr 1fr 1fr}</p>
+        <h4>Pour aligner chaque élément dans sa partie de la grille= justify-items: center;</h4>
+        <p>Exemple: .grid ul {justify-items: center;}</p>
+        <h4>Pour cibler les li de grid= .grid li</h4>
+        <h5>Pour enlver les puces devant les Li= list-style: none;</h5>
+        <h5>Pour centrer un unique élément verticalement et horizontalement dans une boite:</h5>
+        <p>Utiliser= display: flex; / justify-content: center; / align-item: center;</p>
         <div class="box">
           <div class="grid">
             <h4>Grid</h4>
-            <div class="grid-container">
               <ul>
                 <li>boite 1</li>
                 <li>boite 2</li>
                 <li>boite 3</li>
               </ul>
-            </div>
           </div>
         </div>
       </li>
