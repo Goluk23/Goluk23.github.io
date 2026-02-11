@@ -1,9 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: "Poppins";
+  src: url(./assets/fonts/Poppins-Medium.ttf);
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
 h1 {
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   text-shadow: 3px 3px 8px #00000042;
   color: #000000;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Poppins";
 }

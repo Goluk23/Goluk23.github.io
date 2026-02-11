@@ -401,7 +401,7 @@
             <h5>font-size: 1rem; -> Taille du texte 1 rem (1rem = 16px)</h5>
           </li>
           <li>
-            <h4>text-shadow & color</h4>
+            <h4>text-shadow</h4>
             <h5>
               text-shadow: 0 0 0 black; -> définis pas d'ombre noire -> aller
               dans inspecter -> text-shadow -> définir l'ombre voulue et
@@ -409,7 +409,7 @@
               +/-25%).
             </h5>
             <p>Exemple: text-shadow: 3px 3px 8px #00000042;</p>
-            <li><h4>Couleur du texte</h4>
+            <li><h4>color</h4>
             <h5>color:black par exemple</h5>
             <p>
               On peut aussi utiliser les couleurs en rgba(255,255,255,1) r =
@@ -419,12 +419,23 @@
             
           </li>
           <li>
-            <h4>Fonts (Polices)</h4>
-            <h5>Soit celles fournis par CSS</h5>
+            <h4>font-family</h4>
+            <h5>Soit les polices fournies par CSS</h5>
+            <p>Exemple: font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</p>
             <h5>Soit sur Google Fonts</h5>
-            <h6>-> Soit copier le lien vers les fonts</h6>
+            <h6>-> Soit copier le lien vers les fonts au début du CSS</h6>
+            <p>Exemple: @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');</p>
             <h6>-> Soit les télécharger</h6>
-            <p>Par défaut il faut les mettre au début du CSS.</p>
+            <p>Puis les déclarer dans le CSS avec fontface {font-family:"NomPolice"; src: url (./)}</p>
+            <p>Exemple: @font-face {font-family: "Poppins";src: url(./assets/fonts/Poppins-Medium.ttf);}</p>
+          </li>
+
+          <li>
+            <h4>background</h4>
+            <h5>Changement de couleur = background:color;</h5>
+            <h5>Mettre une image en arrière-fond = background: url(./image.png)</h5>
+            <p>Ajouter = norepaeat center/cover; </p>
+            <p>Ou alors ajouter = min-height: 100vh</p>
           </li>
         </ul>
       </li>
