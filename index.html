@@ -371,11 +371,15 @@
           </li>
         </ul>
       </li>
-      <li><h3>LES CLASSES</h3>
+      <li><h3>LES CLASSES ET ID</h3>
         <h4>Déclarer une divison avec une classe = .nomdelaclasse</h4>
         <p>Exemple: .flexbox => div class="flexbox" div</p>
         <h4>Ou la déclarer class="nom de la classe"</h4>
         <p>Exemple: class="flexbox"</p>
+        <h4>Déclarer un id avec la ballise id = id="nom-id"</h4>
+        <p>Exemple: button id="btn-test">Test< button </p>
+        <h4>Pour désigner un id dans CSS ajouter # devant son nom.</h4>
+        <p>Exemple: #btn-test</p>
       </li>
     </ul>
     <h2>CSS</h2>
@@ -519,6 +523,48 @@
               </ul>
           </div>
         </div>
+      </li>
+      <li>
+        <h3>BOUTONS ET INTERACTION</h3>
+        <h4>Changer la couleur du bouton = background: color</h4>
+        <p>Exemple: background: cyan;</p>
+        <h4>On peut utilier un border-radius pour arrondir le bouton.</h4>
+        <h4>Pour que le curseur change en passant dessus = cursor: pointer; </h4>
+        <h4>Pour rendre les animation plus fluides rajouter = transition: 0.#s;</h4>
+        <p>Exemple: transition: 0.2s;</p>
+        <h4>Effet en passant au-dessus de l'élement utiliser la pseudo classe :hover</h4>
+        <p>Exemple: #btn-test:hover {background: darkblue; color: white;}</p>
+        <button id="btn-test">Test</button>
+      </li>
+      <li>
+        <h3>POSITION ABSOLUTE ET RELATIVE</h3>
+        <h4>Pour qu'un élément soit en absolute il faut lui ajouter= position: absolute;</h4>
+        <h4>Il faut ajouter au parent de l'objet l'attribut= position: relative; </h4>
+        <p>S'il n'y a pas de position relative sur le parent, l'objet sera absolute au body.</p>
+        <h4>Pour centrer un élément en absolute il faut lui ajouter une correction= transform: translateX(-50%);</h4>
+        <h4>Pour justifier un élément en absolute il faut lui ajouter une correction= transform: translateY(-50%);</h4>
+        <div class="absolute">
+          <span id="circle1"></span>
+          <span id="circle2"></span>
+        </div>
+      </li>
+      <li>
+        <h3>RESPONSIVE</h3>
+        <h4>Vérifier à partir de quelle largeur d'écran les éléments cassent la fenêtre.</h4>
+        <h4>Pour tester la media query utiliser la commande CSS suivante:</h4>
+        <h4>@media screen and (max-width: ###px) {body {background: red}};</h4>
+        <h4>Repasser les display: grid => display: block;</h4>
+        <h4>Repasser les display: flex => flex-direction: column; align-item: center;</h4>
+        <h4>Diminuer la taille des objets de préférence en % et les centrer.</h4>
+        <h4>Posibilité de faire une seconde media query si ça recasse en plus petit.</h4>
+        <h4>On peut mettre les tailles des polices en %vw pour un % de la largeur de l'écran.</h4>
+        <p>Exemple: font-size: 10vw;</p>
+      </li>
+      <li>
+        <h3>DEBUGAGE</h3>
+        <h4>On peut mettre dans= *{border: 2px solid red;} </h4>
+        <p>Permet d'avoir une bordure rouge sur chaque élément pour vérifier la composition.</p>
+        <p></p>
       </li>
     </ul>
 
