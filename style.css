@@ -85,6 +85,34 @@ h1 {
   color: #000000;
   font-family: "Poppins";
 }
+#section-nav h2,
+#section-nav h3 {
+  color: var(--colorNAV);
+}
+#section-link h2,
+#section-link h3 {
+  color: var(--colorLINK);
+}
+#section-vss h2,
+#section-vss h3 {
+  color: var(--colorVSS);
+}
+#section-html h2,
+#section-html h3 {
+  color: var(--colorHTML);
+}
+#section-css h2,
+#section-css h3 {
+  color: var(--colorCSS);
+}
+#section-js h2,
+#section-js h3 {
+  color: var(--colorJS);
+}
+#section-git h2,
+#section-git h3 {
+  color: var(--colorGIT);
+}
 .box,
 .absolute,
 .card {
