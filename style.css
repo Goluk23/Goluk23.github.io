@@ -197,7 +197,7 @@ h1 {
 }
 
 .card:before {
-  content: "\2730";
+  content: "\261D";
   font-size: 2.5rem;
   position: absolute;
   right: 10px;
