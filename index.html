@@ -8,583 +8,633 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Cheat Sheet VSS, HTML, CSS, GITHUB, JS</h1>
-    <h2>NAVIGATEUR</h2>
-    <ul>
-      <li>
-        <h3>PLUGIN NAVIGATEUR</h3>
-        <ul>
-          <li>
-            <h4>Ruler Measurement plugin</h4>
-            <p><a href="https://chromewebstore.google.com/detail/ruler-measurement/fkfkjailjcijmghkonghlclbjkopjbgh?hl=en">Ruler Measurement</a></p>
-          </li>
-          <li>
-            <h4>ColorPick Eyedropper plugin</h4>
-            <p><a href="https://chromewebstore.google.com/detail/colorpick-eyedropper/ohcpnigalekghcmgcdcenkpelffpdolg?hl=en">ColorPick Eyedropper</a></p>
-          </li>
-          <li>
-            <h4>WhatFont plugin</h4>
-            <p><a href="https://chromewebstore.google.com/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm?hl=en">WhatFont</a></p>
-          </li>
-          <li>
-            <h4>Wappalyzer - Technology profiler plugin</h4>
-            <p><a href="https://chromewebstore.google.com/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg?hl=en">Wappalyzer - Technology profiler</a></p>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <h2>VSS</h2>
-    <ul>
-      <li>
-        <h3>PLUGINS VSS CODE</h3>
-        <ul>
-          <li>
-            <h4>Live server</h4>
-            <p>Activer "Auto Save : onWindowChange"</p>
-            <p>Activer "World Wrap : on"</p>
-          </li>
-          <li>
-            <h4>One Dark Pro</h4>
-            <p>Définir "Workbench: Color Theme : One Dark Pro"</p>
-          </li>
-          <li>
-            <h4>Prettier - Code formatter</h4>
-            <p>
-              Définir "Configure Default Formatter : Prettier - Code formatter"
-            </p>
-            <p>Cocher "Format On Save"</p>
-            <p>Changer "Spaces" en 2 (Indent Using Sapces)</p>
-          </li>
-          <li><h4>Material Icon Theme</h4></li>
-          <p>Définir "Workbench: Icon Theme : Material Icon Theme"</p>
-          <li><h4>Auto Rename Tag</h4></li>
-          <li><h4>Font : Cascadia Code</h4></li>
-        </ul>
-      </li>
-    </ul>
-
-    <h2 id="HTML">HTML</h2>
-    <ul>
-      <li>
-        <h3>ICONE NAVIGATEUR</h3>
-        <h4>
-          Chercher logo HTML -> Images -> Outils -> Couleur -> Transparent
-        </h4>
-        <p>
-          Pour l'ajouter aller sous title -> taper link (link rel="stylesheet"
-          href="") apparait -> remplacer "stylesheet" par "shortcut icon" et
-          indiquer son chemin dans href="./..."
-        </p>
-        <p>Exemple: link rel="shortcut icon" href="./assets/img/logo.png"</p>
-      </li>
-      <li>
-        <h3>LES DIFFERENTES PARTIES D'UN SITE</h3>
-        <p>Principales: nav header main footer</p>
-        <p>Secondaires: section div span p i</p>
-      </li>
-      <li>
-        <h3>UL = Unordered List -> liste sans numéro (avec des puces)</h3>
-        <p>
-          Utilisation "UL" -> "LI" pour les élements à lister (possibilité
-          d'utiliser li*# où # = nombres de répetitions de LI)
-        </p>
-      </li>
-      <li>
-        <h3>OL = Ordered List -> Liste avec des numéros</h3>
-        <p>
-          Utilisation "OL" -> "LI" pour les élements à lister (possibilité
-          d'utiliser li*# où # = nombres de répetitions de LI)
-        </p>
-      </li>
-      <li>
-        <h3>IMAGE EN HTML</h3>
-        <p>
-          Utiliser "img" qui donne (img src="" alt="") indiquer son chemin dans
-          src="./..." et indiquer une description dans alt="".
-        </p>
-        <p>
-          Utilisation de height="200" par exemple est possible pour réduire sa
-          taille en HTML
-        </p>
-      </li>
-      <li>
-        <h3>TYPE DE TEXTE</h3>
-        <p>Normal</p>
-        <p><em>Italique balise "em"</em></p>
-        <p><strong>Gras balise "strong"</strong></p>
-        <p>Faux texte en latin "lorem#" où # = nombre de mots à ajouter</p>
-      </li>
-      <li>
-        <h3>UTILISATION DES TABLEAUX</h3>
-        <p>
-          Utilisation: table border="#" et "cellpading="#"" pour créer un
-          espacement à l'intérieur des cellules et ajouter "cellspacing="#""
-          pour l'espacement entre cellules
-        </p>
-        <p>
-          Exemple: table border="1" cellpadding="10" cellspacing="3"
-          style="text-align: center"
-        </p>
-        <table
-          border="1"
-          cellpadding="10"
-          cellspacing="3"
-          style="text-align: center"
-        >
-          <!-- thead est pour l'entete du tableau  -->
-          <thead>
-            <tr>
-              <th>Utiliser "thead" pour l'entête du tableau</th>
-              <th>Utiliser "tr" pour définir la ligne de l'entête</th>
-              <th>Utiliser "th" pour chaque colonne de l'entête</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Utiliser "tbody" pour la suite du tableau</td>
-              <td>Utiliser "tr" pour chaque ligne du tableau</td>
-              <td>Utiliser "td" pour chaque colonne du tableau</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td>
-                Utiliser "tfoot" pour le pied du tableau avec "tr" et "td"
-              </td>
-              <td colspan="2">
-                Utiliser "rowspan="#"" ou "colspan="#"" pour étendre une cellule
-              </td>
-            </tr>
-          </tfoot>
-        </table>
-      </li>
-      <li>
-        <h3>UTILISATION DES LIENS</h3>
-        <ul>
-          <li>
-            <h4>Lien vers un autre site</h4>
-            <p>
-              Taper "a" (pour ancre) remplir href="" et remplir par un texte
-              entre les balises
-            </p>
-            <p>Utiliser "target="_blank"" pour ouvrir dans un nouvel onglet</p>
-            <p>
-              Exemple: dans les balises a: href="https://htmlcheatsheet.com/"
-              target="_blank">HTML Cheat Sheet
-            </p>
-            <a href="https://htmlcheatsheet.com/" target="_blank"
-              >HTML Cheat Sheet</a
-            >
-          </li>
-          <li>
-            <h4>Lien vers une autre partie du site</h4>
-            <p>Créer un id à la section vers laquelle on veut créer un lien</p>
-            <p>
-              Utiliser une ancre a dans href="#id" où id est l'id est celui de
-              la section désirée.
-            </p>
-            <a href="#HTML">Exemple: retour vers HTML</a>
-          </li>
-          <li>
-            <h4>Lien vers un Email</h4>
-            <p>
-              Utiliser l'ancre a avec dans href="mailto:adresse@domain.ext"
-              suivi du message du lien.
-            </p>
-            <a href="mailto:a@b.com">Contactez-moi</a>
-          </li>
-          <li>
-            <h4>Lien vers un téléchargement</h4>
-            <p>
-              Utiliser l'ancre a avec dans href="./assets/documentaenvoyer.txt"
-              suivi de (download="documentaenvoyer")> Nom du lien.
-            </p>
-            <a href="./assets/notice.txt" download="notice"
-              >Exemple: télécharger la notice</a
-            >
-          </li>
-        </ul>
-      </li>
-      <li>
-        <h3>INTEGRATION DES VIDEOS</h3>
-        <ul>
-          <li>
-            <h4>
-              Vidéos et images gratuites et libres de droits -> pixabay
-
-              <a href="https://pixabay.com/fr/" target="_blank"
-                >https://pixabay.com/fr/</a
+     <h1>Cheat Sheet VSS, HTML, CSS, JS, GITHUB</h1>
+    <nav>
+      <button id="btn-nav">NAV</button>
+      <button id="btn-vss">VSS</button>
+      <button id="btn-html">HTML</button>
+      <button id="btn-css">CSS</button>
+      <button id="btn-js">JS</button>
+      <button id="btn-git">GITHUB</button>
+    </nav>
+    <section id="section-nav">
+      <h2>NAVIGATEUR</h2>
+      <ul>
+        <li>
+          <h3>PLUGIN NAVIGATEUR</h3>
+          <ul>
+            <li>
+              <h4>Ruler Measurement plugin</h4>
+              <p>
+                <a
+                  href="https://chromewebstore.google.com/detail/ruler-measurement/fkfkjailjcijmghkonghlclbjkopjbgh?hl=en"
+                  >Ruler Measurement</a
+                >
+              </p>
+            </li>
+            <li>
+              <h4>ColorPick Eyedropper plugin</h4>
+              <p>
+                <a
+                  href="https://chromewebstore.google.com/detail/colorpick-eyedropper/ohcpnigalekghcmgcdcenkpelffpdolg?hl=en"
+                  >ColorPick Eyedropper</a
+                >
+              </p>
+            </li>
+            <li>
+              <h4>WhatFont plugin</h4>
+              <p>
+                <a
+                  href="https://chromewebstore.google.com/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm?hl=en"
+                  >WhatFont</a
+                >
+              </p>
+            </li>
+            <li>
+              <h4>Wappalyzer - Technology profiler plugin</h4>
+              <p>
+                <a
+                  href="https://chromewebstore.google.com/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg?hl=en"
+                  >Wappalyzer - Technology profiler</a
+                >
+              </p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section id="section-vss">
+      <h2>VSS</h2>
+      <ul>
+        <li>
+          <h3>PLUGINS VSS CODE</h3>
+          <ul>
+            <li>
+              <h4>Live server</h4>
+              <p>Activer "Auto Save : onWindowChange"</p>
+              <p>Activer "World Wrap : on"</p>
+            </li>
+            <li>
+              <h4>One Dark Pro</h4>
+              <p>Définir "Workbench: Color Theme : One Dark Pro"</p>
+            </li>
+            <li>
+              <h4>Prettier - Code formatter</h4>
+              <p>
+                Définir "Configure Default Formatter : Prettier - Code
+                formatter"
+              </p>
+              <p>Cocher "Format On Save"</p>
+              <p>Changer "Spaces" en 2 (Indent Using Sapces)</p>
+            </li>
+            <li><h4>Material Icon Theme</h4></li>
+            <p>Définir "Workbench: Icon Theme : Material Icon Theme"</p>
+            <li><h4>Auto Rename Tag</h4></li>
+            <li><h4>Font : Cascadia Code</h4></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section id="section-html">
+      <h2 id="HTML">HTML</h2>
+      <ul>
+        <li>
+          <h3>ICONE NAVIGATEUR</h3>
+          <h4>
+            Chercher logo HTML -> Images -> Outils -> Couleur -> Transparent
+          </h4>
+          <p>
+            Pour l'ajouter aller sous title -> taper link (link rel="stylesheet"
+            href="") apparait -> remplacer "stylesheet" par "shortcut icon" et
+            indiquer son chemin dans href="./..."
+          </p>
+          <p>Exemple: link rel="shortcut icon" href="./assets/img/logo.png"</p>
+        </li>
+        <li>
+          <h3>LES DIFFERENTES PARTIES D'UN SITE</h3>
+          <p>Principales: nav header main footer</p>
+          <p>Secondaires: section div span p i</p>
+        </li>
+        <li>
+          <h3>UL = Unordered List -> liste sans numéro (avec des puces)</h3>
+          <p>
+            Utilisation "UL" -> "LI" pour les élements à lister (possibilité
+            d'utiliser li*# où # = nombres de répetitions de LI)
+          </p>
+        </li>
+        <li>
+          <h3>OL = Ordered List -> Liste avec des numéros</h3>
+          <p>
+            Utilisation "OL" -> "LI" pour les élements à lister (possibilité
+            d'utiliser li*# où # = nombres de répetitions de LI)
+          </p>
+        </li>
+        <li>
+          <h3>IMAGE EN HTML</h3>
+          <p>
+            Utiliser "img" qui donne (img src="" alt="") indiquer son chemin
+            dans src="./..." et indiquer une description dans alt="".
+          </p>
+          <p>
+            Utilisation de height="200" par exemple est possible pour réduire sa
+            taille en HTML
+          </p>
+        </li>
+        <li>
+          <h3>TYPE DE TEXTE</h3>
+          <p>Normal</p>
+          <p><em>Italique balise "em"</em></p>
+          <p><strong>Gras balise "strong"</strong></p>
+          <p>Faux texte en latin "lorem#" où # = nombre de mots à ajouter</p>
+        </li>
+        <li>
+          <h3>UTILISATION DES TABLEAUX</h3>
+          <p>
+            Utilisation: table border="#" et "cellpading="#"" pour créer un
+            espacement à l'intérieur des cellules et ajouter "cellspacing="#""
+            pour l'espacement entre cellules
+          </p>
+          <p>
+            Exemple: table border="1" cellpadding="10" cellspacing="3"
+            style="text-align: center"
+          </p>
+          <table
+            border="1"
+            cellpadding="10"
+            cellspacing="3"
+            style="text-align: center"
+          >
+            <!-- thead est pour l'entete du tableau  -->
+            <thead>
+              <tr>
+                <th>Utiliser "thead" pour l'entête du tableau</th>
+                <th>Utiliser "tr" pour définir la ligne de l'entête</th>
+                <th>Utiliser "th" pour chaque colonne de l'entête</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Utiliser "tbody" pour la suite du tableau</td>
+                <td>Utiliser "tr" pour chaque ligne du tableau</td>
+                <td>Utiliser "td" pour chaque colonne du tableau</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>
+                  Utiliser "tfoot" pour le pied du tableau avec "tr" et "td"
+                </td>
+                <td colspan="2">
+                  Utiliser "rowspan="#"" ou "colspan="#"" pour étendre une
+                  cellule
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </li>
+        <li>
+          <h3>UTILISATION DES LIENS</h3>
+          <ul>
+            <li>
+              <h4>Lien vers un autre site</h4>
+              <p>
+                Taper "a" (pour ancre) remplir href="" et remplir par un texte
+                entre les balises
+              </p>
+              <p>
+                Utiliser "target="_blank"" pour ouvrir dans un nouvel onglet
+              </p>
+              <p>
+                Exemple: dans les balises a: href="https://htmlcheatsheet.com/"
+                target="_blank">HTML Cheat Sheet
+              </p>
+              <a href="https://htmlcheatsheet.com/" target="_blank"
+                >HTML Cheat Sheet</a
               >
-            </h4>
-            <p>Utiliser "Video" remplir la src:".//"</p>
-            <p>
-              Paramètres à utiliser: "autoplay" "muted" "loop" et éventuellement
-              "height="200"
-            </p>
-            <p>
-              Exemple: video src="./assets/video/video.mp4" height="200"
-              autoplay muted
-            </p>
-            <!-- <video src="./assets/video/video.mp4" height="200" autoplay muted></video> -->
-          </li>
-        </ul>
-      </li>
-      <li>
-        <h3>LES FORMULAIRES</h3>
-        <ul>
-          <li>
-            <h4>Input de type text</h4>
-            <p>
-              Délarer avec la balise "form" action="" peut rester libre pour
-              l'instant.
-            </p>
-            <p>
-              Ensuite déclarer un "label" avec for="id de l'input" suivi du
-              texte a afficher.
-            </p>
-            <p>
-              Déclarer enfin un "input" de type "text" et dans "id" utiliser la
-              même chose que dans label pour lier les deux.
-            </p>
-            <p>On peut tuiliser un placeholder="entrez votre texte"</p>
-            <form action="">
-              <label for="text">
-                Exemple: Formulaire de type texte
-                <input
-                  type="text"
-                  name=""
-                  id="text"
-                  placeholder="Votre texte ici"
-                />
-              </label>
-            </form>
-          </li>
-          <li>
-            <h4>Input de type number</h4>
-            <p>
-              Délarer avec la balise "form" action="" peut rester libre pour
-              l'instant.
-            </p>
-            <p>
-              Ensuite déclarer un "label" avec for="id de l'input" suivi du
-              texte a afficher.
-            </p>
-            <p>
-              Déclarer enfin un "input" de type "number" et dans "id" utiliser
-              la même chose que dans label pour lier les deux.
-            </p>
-            <p>
-              On peut utiliser value="18" par exemple pour commecer avec un
-              nombre.
-            </p>
-            <form action="">
-              <label for="age">
-                Exemple: Formulaire de type number
-                <input type="number" id="age" value="18" />
-              </label>
-            </form>
-          </li>
-          <li>
-            <h4>Input de type select</h4>
-            <p>
-              Déclarer un "label" avec for="id de l'input" suivi du texte a
-              afficher.
-            </p>
-            <p>
-              Déclarer "select" et dans "id" utiliser la même chose que dans
-              label pour lier les deux.
-            </p>
-            <p>
-              Dans "select" déclarer "option" pour chaque option remplir la
-              value et le texte à afficher.
-            </p>
-            <p>
-              Rajouter la banière selected="selected" devant "value" pour
-              l'option par défaut.
-            </p>
-            <form action="">
-              <label for="gender">Genre</label>
-              <select id="gender">
-                <option value="Homme">Homme</option>
-                <option selected="selected" value="Femme">Femme</option>
-                <option value="Autre">Autre</option>
-              </select>
-            </form>
-          </li>
-          <li>
-            <h4>Input de type radio</h4>
-            <p>
-              Déclarer input de type radio avec le même "name" pour tous les
-              "radio" liés et même id pour chaque choix différent.
-            </p>
-            <p>
-              Déclarer un "label" avec for="id de l'input" suivi du texte a
-              afficher.
-            </p>
-            <p>
-              Copier le nombre de fois que nécessaire input et label avec le
-              même name et id différent à utiliser dans label.
-            </p>
-            <p>
-              On peut utiliser la balise "checked" après id pour qu'il soit
-              selcetionné par défaut.
-            </p>
-            <input type="radio" name="type" id="human" checked />
-            <label for="human">Humain</label>
+            </li>
+            <li>
+              <h4>Lien vers une autre partie du site</h4>
+              <p>
+                Créer un id à la section vers laquelle on veut créer un lien
+              </p>
+              <p>
+                Utiliser une ancre a dans href="#id" où id est l'id est celui de
+                la section désirée.
+              </p>
+              <a href="#HTML">Exemple: retour vers HTML</a>
+            </li>
+            <li>
+              <h4>Lien vers un Email</h4>
+              <p>
+                Utiliser l'ancre a avec dans href="mailto:adresse@domain.ext"
+                suivi du message du lien.
+              </p>
+              <a href="mailto:a@b.com">Contactez-moi</a>
+            </li>
+            <li>
+              <h4>Lien vers un téléchargement</h4>
+              <p>
+                Utiliser l'ancre a avec dans
+                href="./assets/documentaenvoyer.txt" suivi de
+                (download="documentaenvoyer")> Nom du lien.
+              </p>
+              <a href="./assets/notice.txt" download="notice"
+                >Exemple: télécharger la notice</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h3>INTEGRATION DES VIDEOS</h3>
+          <ul>
+            <li>
+              <h4>
+                Vidéos et images gratuites et libres de droits -> pixabay
 
-            <input type="radio" name="type" id="dog" />
-            <label for="dog">Chien</label>
+                <a href="https://pixabay.com/fr/" target="_blank"
+                  >https://pixabay.com/fr/</a
+                >
+              </h4>
+              <p>Utiliser "Video" remplir la src:".//"</p>
+              <p>
+                Paramètres à utiliser: "autoplay" "muted" "loop" et
+                éventuellement "height="200"
+              </p>
+              <p>
+                Exemple: video src="./assets/video/video.mp4" height="200"
+                autoplay muted
+              </p>
+              <!-- <video src="./assets/video/video.mp4" height="200" autoplay muted></video> -->
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h3>LES FORMULAIRES</h3>
+          <ul>
+            <li>
+              <h4>Input de type text</h4>
+              <p>
+                Délarer avec la balise "form" action="" peut rester libre pour
+                l'instant.
+              </p>
+              <p>
+                Ensuite déclarer un "label" avec for="id de l'input" suivi du
+                texte a afficher.
+              </p>
+              <p>
+                Déclarer enfin un "input" de type "text" et dans "id" utiliser
+                la même chose que dans label pour lier les deux.
+              </p>
+              <p>On peut tuiliser un placeholder="entrez votre texte"</p>
+              <form action="">
+                <label for="text">
+                  Exemple: Formulaire de type texte
+                  <input
+                    type="text"
+                    name=""
+                    id="text"
+                    placeholder="Votre texte ici"
+                  />
+                </label>
+              </form>
+            </li>
+            <li>
+              <h4>Input de type number</h4>
+              <p>
+                Délarer avec la balise "form" action="" peut rester libre pour
+                l'instant.
+              </p>
+              <p>
+                Ensuite déclarer un "label" avec for="id de l'input" suivi du
+                texte a afficher.
+              </p>
+              <p>
+                Déclarer enfin un "input" de type "number" et dans "id" utiliser
+                la même chose que dans label pour lier les deux.
+              </p>
+              <p>
+                On peut utiliser value="18" par exemple pour commecer avec un
+                nombre.
+              </p>
+              <form action="">
+                <label for="age">
+                  Exemple: Formulaire de type number
+                  <input type="number" id="age" value="18" />
+                </label>
+              </form>
+            </li>
+            <li>
+              <h4>Input de type select</h4>
+              <p>
+                Déclarer un "label" avec for="id de l'input" suivi du texte a
+                afficher.
+              </p>
+              <p>
+                Déclarer "select" et dans "id" utiliser la même chose que dans
+                label pour lier les deux.
+              </p>
+              <p>
+                Dans "select" déclarer "option" pour chaque option remplir la
+                value et le texte à afficher.
+              </p>
+              <p>
+                Rajouter la banière selected="selected" devant "value" pour
+                l'option par défaut.
+              </p>
+              <form action="">
+                <label for="gender">Genre</label>
+                <select id="gender">
+                  <option value="Homme">Homme</option>
+                  <option selected="selected" value="Femme">Femme</option>
+                  <option value="Autre">Autre</option>
+                </select>
+              </form>
+            </li>
+            <li>
+              <h4>Input de type radio</h4>
+              <p>
+                Déclarer input de type radio avec le même "name" pour tous les
+                "radio" liés et même id pour chaque choix différent.
+              </p>
+              <p>
+                Déclarer un "label" avec for="id de l'input" suivi du texte a
+                afficher.
+              </p>
+              <p>
+                Copier le nombre de fois que nécessaire input et label avec le
+                même name et id différent à utiliser dans label.
+              </p>
+              <p>
+                On peut utiliser la balise "checked" après id pour qu'il soit
+                selcetionné par défaut.
+              </p>
+              <input type="radio" name="type" id="human" checked />
+              <label for="human">Humain</label>
 
-            <input type="radio" name="type" id="cat" />
-            <label for="cat">Chat</label>
-          </li>
-          <li>
-            <h4>Input de type textarea</h4>
-            <p>Déclarer "textarea" on peut effacer "name=" et "id=".</p>
-            <p>
-              On peut rajouter "placeholder" pour afficher du texte dans la box.
-            </p>
-            <p>
-              On peut rajouter "cols=#" et "rows=#" pour la taille de la
-              textarea.
-            </p>
-            <p>Ajouter style="resize:none" pour éviter le redimmensionnement de la zone.</p>
-            <textarea
-              style="resize:none"
-              placeholder="Votre message..."
-              cols="30"
-              rows="1"
-            ></textarea>
-          </li>
-          <li>
-            <h4>Input de type checkbox</h4>
-            <p>
-              Déclarer un input de type checkbox on peut laisser le name vide.
-            </p>
-            <p>
-              Déclarer un "label" avec for="id de l'input" suivi du texte a
-              afficher.
-            </p>
-            <input type="checkbox" name="" id="cgv" />
-            <label for="cgv">Accepter les conditions générales:</label>
-          </li>
-          <li>
-            <h4>Bouton pour valider</h4>
-            <p>
-              Déclarer un input de type submit et mettre dans value ce qu'on
-              veut affficher.
-            </p>
-            <input
-              type="submit"
-              value="Ceci est le bouton pour valider le formulaire"
-            />
-          </li>
-          <li>
-            <h4>
-              Pour que les différents boutons soient liés avec l'envoi il faut
-              qu'ils soient dans la même balise "form".
-            </h4>
-          </li>
-        </ul>
-      </li>
-      <li><h3>LES CLASSES ET ID</h3>
-        <h4>Déclarer une divison avec une classe = .nomdelaclasse</h4>
-        <p>Exemple: .flexbox => div class="flexbox" div</p>
-        <h4>Ou la déclarer class="nom de la classe"</h4>
-        <p>Exemple: class="flexbox"</p>
-        <h4>Déclarer un id avec la ballise id = id="nom-id"</h4>
-        <p>Exemple: button id="btn-test">Test< button </p>
-        <h4>Pour désigner un id dans CSS ajouter # devant son nom.</h4>
-        <p>Exemple: #btn-test</p>
-      </li>
-    </ul>
-    <h2>CSS</h2>
-    <ul>
-      <li>
-        <h3>Créer un fichier style.css dans l'arborescence d'index.html</h3>
-        <h3>Intégrer une page CSS à Index.html</h3>
-        <h4>
-          En dessous de la balise Title mais toujours dans HEAD rajouter la
-          balise CSS.
-        </h4>
-        <h5>
-          Il faut rajouter la balise link:css et pointer vers le fichier CSS.
-        </h5>
-        <p>Exemple: link rel="stylesheet" href="/.style.css"</p>
-        <h5>
-          Vérifer que le lien est présent en ajoutant body puis background=red
-          pour vérifier que le body est rouge.
-        </h5>
-        <p>Exemple: body {background: red;}</p>
-      </li>
-      <li>
-        <h3>
-          Utilisation de CSS sur du texte (H1 dans ce cas)
-        </h3>
-        <ul>
-          <li>
-            <h4>text-transform</h4>
-            <h5>text-transform: capitalize; -> Première lettre en Majuscule</h5>
-            <h5>
-              text-transform: uppercase; -> Toutes les lettres en Majuscule
-            </h5>
-          </li>
-          <li>
-            <h4>letter-spacing & font-size</h4>
-            <h5>
-              letter-spacing: #px; -> Espace entre les lettres en pixels (px)
-            </h5>
-            <h5>
-              text-align: center; -> Aligner le texte au mileu de la ligne
-            </h5>
-            <h5>font-size: 1rem; -> Taille du texte 1 rem (1rem = 16px)</h5>
-          </li>
-          <li>
-            <h4>text-shadow</h4>
-            <h5>
-              text-shadow: 0 0 0 black; -> définis pas d'ombre noire -> aller
-              dans inspecter -> text-shadow -> définir l'ombre voulue et
-              récupérer le code, sur couleur choisir l'opacité (recommandé à
-              +/-25%).
-            </h5>
-            <p>Exemple: text-shadow: 3px 3px 8px #00000042;</p>
-            <li><h4>color</h4>
-            <h5>color:black par exemple</h5>
-            <p>
-              On peut aussi utiliser les couleurs en rgba(255,255,255,1) r =
-              rouge, g = vert, b = bleu, a = opacité ( 1= full).
-            </p>
-            <p>Ou encore en héxadécimal avec #eeeeee par exemple (#000000 = noir).</p></li>
-            
-          </li>
-          <li>
-            <h4>font-family</h4>
-            <h5>Soit les polices fournies par CSS</h5>
-            <p>Exemple: font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</p>
-            <h5>Soit sur Google Fonts</h5>
-            <h6>-> Soit copier le lien vers les fonts au début du CSS</h6>
-            <p>Exemple: @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');</p>
-            <h6>-> Soit les télécharger</h6>
-            <p>Puis les déclarer dans le CSS avec fontface {font-family:"NomPolice"; src: url (./)}</p>
-            <p>Exemple: @font-face {font-family: "Poppins";src: url(./assets/fonts/Poppins-Medium.ttf);}</p>
-          </li>
+              <input type="radio" name="type" id="dog" />
+              <label for="dog">Chien</label>
 
-          <li>
-            <h4>background</h4>
-            <h5>Changement de couleur = background:color;</h5>
-            <h5>Mettre une image en arrière-fond = background: url(./image.png)</h5>
-            <p>Ajouter = norepaeat center/cover; </p>
-            <p>Ou alors ajouter = min-height: 100vh</p>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <h3>Les BOX</h3>
-        <h4>Ajouter une hauteur minimum en px (exemple= min-height: 100px;) </h4>
-        <h4>Ajouter une largeur en % (exemple= width: 90%;)</h4>
-        <h4>Ajouter une couleur de fond (exemple= background: rgba(125, 125, 125, 0.9);)</h4>
-        <h4>Pour centrer horizontalement la boite il faut rajouter= margin: 0 auto; </h4>
-        <h4>On peut rajouter une borure avec= border #px solid couleur</h4>
-        <h4>On peut arrondir les bords avec= border-radius: #px (ou #px #px #px #px)</h4>
-        <h4>On peut rajouter une ombre à la boite avec= box-shadow: 0 0 0 0 color;</h4>
-        <h4>On peut ajouter une marge intérieure avec= padding: #px (ou #px #px #px #px) </h4>
-        <h4>Pour enlever les reglages de base du titre h4= .box h4 {margin:0; padding:0;}</h4>
-            <div class="box">
-              <h4>Box</h4>
-          </div>
-      </li>
-      <li>
-        <h3>FLEXBOX</h3>
-        <h4>Pour les réglages dans UL cibler= .flexbox ul</h4>
-        <h4>Dans le parent direct des boite à aligner utilser= display flex</h4>
-        <p>Exemple: .flexbox ul {display: flex;}</p>
-        <h4>Pour aligner les éléments utiliser= justify-content: space-around; </h4>
-        <p>Exemple: .flexbox ul {justify-content: space-around;}</p>
-        <h5>Pour enlver le padding= .flexbox ul { padding: 0; } </h5>
-        <h4>Pour cibler les li de flexbox= .flexbox li</h4>
-        <h5>Pour enlver les puces devant les Li= list-style: none;</h5>
-        <h5>Pour centrer un unique élément verticalement et horizontalement dans une boite:</h5>
-        <p>Utiliser= display: flex; / justify-content: center; / align-item: center;</p>
-        <div class="box">
-          <div class="flexbox">
-            <h4>Flexbox</h4>
-            <ul>
-              <li>boite 1</li>
-              <li>boite 2</li>
-              <li>boite 3</li>
-            </ul>
-          </div>
-        </div>
-      </li>
-      <li>
-        <h3>GRID</h3>
-        <h4>Pour les réglages dans UL cibler= .grid ul</h4>
-        <h4>Dans le parent direct des boite à aligner utilser= display grid</h4>
-        <p>Exemple: .grid ul {display: grid;}</p>
-        <h4>Pour déterminer les proportions des grilles utiliser= grid-template-columns: % ou fr</h4>
-        <p>Exemple: .grid ul {grid-template-columns: 25% 30% 45%;} ou {grid-template-columns: 1fr 1fr 1fr}</p>
-        <h4>Pour aligner chaque élément dans sa partie de la grille= justify-items: center;</h4>
-        <p>Exemple: .grid ul {justify-items: center;}</p>
-        <h4>Pour cibler les li de grid= .grid li</h4>
-        <h5>Pour enlver les puces devant les Li= list-style: none;</h5>
-        <h5>Pour centrer un unique élément verticalement et horizontalement dans une boite:</h5>
-        <p>Utiliser= display: flex; / justify-content: center; / align-item: center;</p>
-        <div class="box">
-          <div class="grid">
-            <h4>Grid</h4>
+              <input type="radio" name="type" id="cat" />
+              <label for="cat">Chat</label>
+            </li>
+            <li>
+              <h4>Input de type textarea</h4>
+              <p>Déclarer "textarea" on peut effacer "name=" et "id=".</p>
+              <p>
+                On peut rajouter "placeholder" pour afficher du texte dans la
+                box.
+              </p>
+              <p>
+                On peut rajouter "cols=#" et "rows=#" pour la taille de la
+                textarea.
+              </p>
+              <p>
+                Ajouter style="resize:none" pour éviter le redimmensionnement de
+                la zone.
+              </p>
+              <textarea
+                style="resize: none"
+                placeholder="Votre message..."
+                cols="30"
+                rows="1"
+              ></textarea>
+            </li>
+            <li>
+              <h4>Input de type checkbox</h4>
+              <p>
+                Déclarer un input de type checkbox on peut laisser le name vide.
+              </p>
+              <p>
+                Déclarer un "label" avec for="id de l'input" suivi du texte a
+                afficher.
+              </p>
+              <input type="checkbox" name="" id="cgv" />
+              <label for="cgv">Accepter les conditions générales:</label>
+            </li>
+            <li>
+              <h4>Bouton pour valider</h4>
+              <p>
+                Déclarer un input de type submit et mettre dans value ce qu'on
+                veut affficher.
+              </p>
+              <input
+                type="submit"
+                value="Ceci est le bouton pour valider le formulaire"
+              />
+            </li>
+            <li>
+              <h4>
+                Pour que les différents boutons soient liés avec l'envoi il faut
+                qu'ils soient dans la même balise "form".
+              </h4>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h3>LES CLASSES ET ID</h3>
+          <h4>Déclarer une divison avec une classe = .nomdelaclasse</h4>
+          <p>Exemple: .flexbox => div class="flexbox" div</p>
+          <h4>Ou la déclarer class="nom de la classe"</h4>
+          <p>Exemple: class="flexbox"</p>
+          <h4>Déclarer un id avec la ballise id = id="nom-id"</h4>
+          <p>Exemple: button id="btn-test">Test< button</p>
+          <h4>Pour désigner un id dans CSS ajouter # devant son nom.</h4>
+          <p>Exemple: #btn-test</p>
+        </li>
+      </ul>
+    </section>
+    <section id="section-css">
+      <h2>CSS</h2>
+      <ul>
+        <li>
+          <h3>Créer un fichier style.css dans l'arborescence d'index.html</h3>
+          <h3>Intégrer une page CSS à Index.html</h3>
+          <h4>
+            En dessous de la balise Title mais toujours dans HEAD rajouter la
+            balise CSS.
+          </h4>
+          <h5>
+            Il faut rajouter la balise link:css et pointer vers le fichier CSS.
+          </h5>
+          <p>Exemple: link rel="stylesheet" href="/.style.css"</p>
+          <h5>
+            Vérifer que le lien est présent en ajoutant body puis background=red
+            pour vérifier que le body est rouge.
+          </h5>
+          <p>Exemple: body {background: red;}</p>
+        </li>
+        <li>
+          <h3>
+            Utilisation de CSS sur du texte (H1 dans ce cas)
+          </h3>
+          <ul>
+            <li>
+              <h4>text-transform</h4>
+              <h5>text-transform: capitalize; -> Première lettre en Majuscule</h5>
+              <h5>
+                text-transform: uppercase; -> Toutes les lettres en Majuscule
+              </h5>
+            </li>
+            <li>
+              <h4>letter-spacing & font-size</h4>
+              <h5>
+                letter-spacing: #px; -> Espace entre les lettres en pixels (px)
+              </h5>
+              <h5>
+                text-align: center; -> Aligner le texte au mileu de la ligne
+              </h5>
+              <h5>font-size: 1rem; -> Taille du texte 1 rem (1rem = 16px)</h5>
+            </li>
+            <li>
+              <h4>text-shadow</h4>
+              <h5>
+                text-shadow: 0 0 0 black; -> définis pas d'ombre noire -> aller
+                dans inspecter -> text-shadow -> définir l'ombre voulue et
+                récupérer le code, sur couleur choisir l'opacité (recommandé à
+                +/-25%).
+              </h5>
+              <p>Exemple: text-shadow: 3px 3px 8px #00000042;</p>
+              <li><h4>color</h4>
+              <h5>color:black par exemple</h5>
+              <p>
+                On peut aussi utiliser les couleurs en rgba(255,255,255,1) r =
+                rouge, g = vert, b = bleu, a = opacité ( 1= full).
+              </p>
+              <p>Ou encore en héxadécimal avec #eeeeee par exemple (#000000 = noir).</p></li>
+              
+            </li>
+            <li>
+              <h4>font-family</h4>
+              <h5>Soit les polices fournies par CSS</h5>
+              <p>Exemple: font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</p>
+              <h5>Soit sur Google Fonts</h5>
+              <h6>-> Soit copier le lien vers les fonts au début du CSS</h6>
+              <p>Exemple: @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');</p>
+              <h6>-> Soit les télécharger</h6>
+              <p>Puis les déclarer dans le CSS avec fontface {font-family:"NomPolice"; src: url (./)}</p>
+              <p>Exemple: @font-face {font-family: "Poppins";src: url(./assets/fonts/Poppins-Medium.ttf);}</p>
+            </li>
+
+            <li>
+              <h4>background</h4>
+              <h5>Changement de couleur = background:color;</h5>
+              <h5>Mettre une image en arrière-fond = background: url(./image.png)</h5>
+              <p>Ajouter = norepaeat center/cover; </p>
+              <p>Ou alors ajouter = min-height: 100vh</p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h3>Les BOX</h3>
+          <h4>Ajouter une hauteur minimum en px (exemple= min-height: 100px;) </h4>
+          <h4>Ajouter une largeur en % (exemple= width: 90%;)</h4>
+          <h4>Ajouter une couleur de fond (exemple= background: rgba(125, 125, 125, 0.9);)</h4>
+          <h4>Pour centrer horizontalement la boite il faut rajouter= margin: 0 auto; </h4>
+          <h4>On peut rajouter une borure avec= border #px solid couleur</h4>
+          <h4>On peut arrondir les bords avec= border-radius: #px (ou #px #px #px #px)</h4>
+          <h4>On peut rajouter une ombre à la boite avec= box-shadow: 0 0 0 0 color;</h4>
+          <h4>On peut ajouter une marge intérieure avec= padding: #px (ou #px #px #px #px) </h4>
+          <h4>Pour enlever les reglages de base du titre h4= .box h4 {margin:0; padding:0;}</h4>
+              <div class="box">
+                <h4>Box</h4>
+            </div>
+        </li>
+        <li>
+          <h3>FLEXBOX</h3>
+          <h4>Pour les réglages dans UL cibler= .flexbox ul</h4>
+          <h4>Dans le parent direct des boite à aligner utilser= display flex</h4>
+          <p>Exemple: .flexbox ul {display: flex;}</p>
+          <h4>Pour aligner les éléments utiliser= justify-content: space-around; </h4>
+          <p>Exemple: .flexbox ul {justify-content: space-around;}</p>
+          <h5>Pour enlver le padding= .flexbox ul { padding: 0; } </h5>
+          <h4>Pour cibler les li de flexbox= .flexbox li</h4>
+          <h5>Pour enlver les puces devant les Li= list-style: none;</h5>
+          <h5>Pour centrer un unique élément verticalement et horizontalement dans une boite:</h5>
+          <p>Utiliser= display: flex; / justify-content: center; / align-item: center;</p>
+          <div class="box">
+            <div class="flexbox">
+              <h4>Flexbox</h4>
               <ul>
                 <li>boite 1</li>
                 <li>boite 2</li>
                 <li>boite 3</li>
               </ul>
+            </div>
           </div>
-        </div>
-      </li>
-      <li>
-        <h3>BOUTONS ET INTERACTION</h3>
-        <h4>Changer la couleur du bouton = background: color</h4>
-        <p>Exemple: background: cyan;</p>
-        <h4>On peut utilier un border-radius pour arrondir le bouton.</h4>
-        <h4>Pour que le curseur change en passant dessus = cursor: pointer; </h4>
-        <h4>Pour rendre les animation plus fluides rajouter = transition: 0.#s;</h4>
-        <p>Exemple: transition: 0.2s;</p>
-        <h4>Effet en passant au-dessus de l'élement utiliser la pseudo classe :hover</h4>
-        <p>Exemple: #btn-test:hover {background: darkblue; color: white;}</p>
-        <button id="btn-test">Test</button>
-      </li>
-      <li>
-        <h3>POSITION ABSOLUTE ET RELATIVE</h3>
-        <h4>Pour qu'un élément soit en absolute il faut lui ajouter= position: absolute;</h4>
-        <h4>Il faut ajouter au parent de l'objet l'attribut= position: relative; </h4>
-        <p>S'il n'y a pas de position relative sur le parent, l'objet sera absolute au body.</p>
-        <h4>Pour centrer un élément en absolute il faut lui ajouter une correction= transform: translateX(-50%);</h4>
-        <h4>Pour justifier un élément en absolute il faut lui ajouter une correction= transform: translateY(-50%);</h4>
-        <div class="absolute">
-          <span id="circle1"></span>
-          <span id="circle2"></span>
-        </div>
-      </li>
-      <li>
-        <h3>RESPONSIVE</h3>
-        <h4>Vérifier à partir de quelle largeur d'écran les éléments cassent la fenêtre.</h4>
-        <h4>Pour tester la media query utiliser la commande CSS suivante:</h4>
-        <h4>@media screen and (max-width: ###px) {body {background: red}};</h4>
-        <h4>Repasser les display: grid => display: block;</h4>
-        <h4>Repasser les display: flex => flex-direction: column; align-item: center;</h4>
-        <h4>Diminuer la taille des objets de préférence en % et les centrer.</h4>
-        <h4>Posibilité de faire une seconde media query si ça recasse en plus petit.</h4>
-        <h4>On peut mettre les tailles des polices en %vw pour un % de la largeur de l'écran.</h4>
-        <p>Exemple: font-size: 10vw;</p>
-      </li>
-      <li>
-        <h3>DEBUGAGE</h3>
-        <h4>On peut mettre dans= *{border: 2px solid red;} </h4>
-        <p>Permet d'avoir une bordure rouge sur chaque élément pour vérifier la composition.</p>
-        <p></p>
-      </li>
-    </ul>
-
-    <h2>GITHUB</h2>
+        </li>
+        <li>
+          <h3>GRID</h3>
+          <h4>Pour les réglages dans UL cibler= .grid ul</h4>
+          <h4>Dans le parent direct des boite à aligner utilser= display grid</h4>
+          <p>Exemple: .grid ul {display: grid;}</p>
+          <h4>Pour déterminer les proportions des grilles utiliser= grid-template-columns: % ou fr</h4>
+          <p>Exemple: .grid ul {grid-template-columns: 25% 30% 45%;} ou {grid-template-columns: 1fr 1fr 1fr}</p>
+          <h4>Pour aligner chaque élément dans sa partie de la grille= justify-items: center;</h4>
+          <p>Exemple: .grid ul {justify-items: center;}</p>
+          <h4>Pour cibler les li de grid= .grid li</h4>
+          <h5>Pour enlver les puces devant les Li= list-style: none;</h5>
+          <h5>Pour centrer un unique élément verticalement et horizontalement dans une boite:</h5>
+          <p>Utiliser= display: flex; / justify-content: center; / align-item: center;</p>
+          <div class="box">
+            <div class="grid">
+              <h4>Grid</h4>
+                <ul>
+                  <li>boite 1</li>
+                  <li>boite 2</li>
+                  <li>boite 3</li>
+                </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <h3>BOUTONS ET INTERACTION</h3>
+          <h4>Changer la couleur du bouton = background: color</h4>
+          <p>Exemple: background: cyan;</p>
+          <h4>On peut utilier un border-radius pour arrondir le bouton.</h4>
+          <h4>Pour que le curseur change en passant dessus = cursor: pointer; </h4>
+          <h4>Pour rendre les animation plus fluides rajouter = transition: 0.#s;</h4>
+          <p>Exemple: transition: 0.2s;</p>
+          <h4>Effet en passant au-dessus de l'élement utiliser la pseudo classe :hover</h4>
+          <p>Exemple: #btn-test:hover {background: darkblue; color: white;}</p>
+          <button id="btn-test">Test</button>
+        </li>
+        <li>
+          <h3>POSITION ABSOLUTE ET RELATIVE</h3>
+          <h4>Pour qu'un élément soit en absolute il faut lui ajouter= position: absolute;</h4>
+          <h4>Il faut ajouter au parent de l'objet l'attribut= position: relative; </h4>
+          <p>S'il n'y a pas de position relative sur le parent, l'objet sera absolute au body.</p>
+          <h4>Pour centrer un élément en absolute il faut lui ajouter une correction= transform: translateX(-50%);</h4>
+          <h4>Pour justifier un élément en absolute il faut lui ajouter une correction= transform: translateY(-50%);</h4>
+          <div class="absolute">
+            <span id="circle1"></span>
+            <span id="circle2"></span>
+          </div>
+        </li>
+        <li>
+          <h3>RESPONSIVE</h3>
+          <h4>Vérifier à partir de quelle largeur d'écran les éléments cassent la fenêtre.</h4>
+          <h4>Pour tester la media query utiliser la commande CSS suivante:</h4>
+          <h4>@media screen and (max-width: ###px) {body {background: red}};</h4>
+          <h4>Repasser les display: grid => display: block;</h4>
+          <h4>Repasser les display: flex => flex-direction: column; align-item: center;</h4>
+          <h4>Diminuer la taille des objets de préférence en % et les centrer.</h4>
+          <h4>Posibilité de faire une seconde media query si ça recasse en plus petit.</h4>
+          <h4>On peut mettre les tailles des polices en %vw pour un % de la largeur de l'écran.</h4>
+          <p>Exemple: font-size: 10vw;</p>
+        </li>
+        <li>
+          <h3>DEBUGAGE</h3>
+          <h4>On peut mettre dans= *{border: 2px solid red;} </h4>
+          <p>Permet d'avoir une bordure rouge sur chaque élément pour vérifier la composition.</p>
+          <p></p>
+        </li>
+      </ul>
+    </section>
+    <section id="section-js">
+      <h2>JAVASCRIPT</h2>
+    </section>
+    <section id="section-git">
+          <h2>GITHUB</h2>
     <ul>
       <li>
         <h3>
@@ -616,5 +666,7 @@
         </h3>
       </li>
     </ul>
+    </section>
+    <script src="./index.js"></script>
   </body>
 </html>

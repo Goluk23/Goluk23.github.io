@@ -4,6 +4,44 @@
   font-family: "Poppins";
   src: url(./assets/fonts/Poppins-Medium.ttf);
 }
+:root {
+  --colorNAV: rgb(35, 154, 15);
+  --colorVSS: rgb(54, 84, 164);
+  --colorHTML: rgb(255, 76, 30);
+  --colorCSS: rgb(53, 149, 207);
+  --colorJS: rgb(239, 216, 28);
+  --colorGIT: rgb(92, 107, 192);
+}
+* {
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+}
+nav button {
+  width: 100px;
+  height: 25px;
+  cursor: pointer;
+}
+#btn-nav {
+  background: var(--colorNAV);
+}
+#btn-vss {
+  background: var(--colorVSS);
+}
+#btn-css {
+  background: var(--colorCSS);
+}
+#btn-html {
+  background: var(--colorHTML);
+}
+#btn-js {
+  background: var(--colorJS);
+}
+#btn-git {
+  background: var(--colorGIT);
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
