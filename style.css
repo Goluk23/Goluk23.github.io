@@ -6,6 +6,7 @@
 }
 :root {
   --colorNAV: rgb(35, 154, 15);
+  --colorLINK: rgb(148, 33, 139);
   --colorVSS: rgb(54, 84, 164);
   --colorHTML: rgb(255, 76, 30);
   --colorCSS: rgb(53, 149, 207);
@@ -26,6 +27,9 @@ nav button {
 #btn-nav {
   background: var(--colorNAV);
 }
+#btn-link {
+  background: var(--colorLINK);
+}
 #btn-vss {
   background: var(--colorVSS);
 }
@@ -42,6 +46,9 @@ nav button {
   background: var(--colorGIT);
 }
 #section-nav {
+  display: none;
+}
+#section-link {
   display: none;
 }
 #section-vss {
