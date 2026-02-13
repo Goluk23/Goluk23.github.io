@@ -41,7 +41,24 @@ nav button {
 #btn-git {
   background: var(--colorGIT);
 }
-
+#section-nav {
+  display: none;
+}
+#section-vss {
+  display: none;
+}
+#section-css {
+  display: none;
+}
+#section-html {
+  display: none;
+}
+#section-js {
+  display: none;
+}
+#section-git {
+  display: none;
+}
 body {
   font-family: "Roboto", sans-serif;
 }

@@ -13,7 +13,7 @@ const sectiongit = document.querySelector("#section-git");
 
 btnnav.addEventListener("click", () => {
   sectionnav.style.border = "5px solid var(--colorNAV)";
-  sectionnav.style.display = "";
+  sectionnav.style.display = "block";
   sectionvss.style.display = "none";
   sectionhtml.style.display = "none";
   sectioncss.style.display = "none";
@@ -24,7 +24,7 @@ btnnav.addEventListener("click", () => {
 btnvss.addEventListener("click", () => {
   sectionvss.style.border = "5px solid var(--colorVSS)";
   sectionnav.style.display = "none";
-  sectionvss.style.display = "";
+  sectionvss.style.display = "block";
   sectionhtml.style.display = "none";
   sectioncss.style.display = "none";
   sectionjs.style.display = "none";
@@ -35,7 +35,7 @@ btnhtml.addEventListener("click", () => {
   sectionhtml.style.border = "5px solid var(--colorHTML)";
   sectionnav.style.display = "none";
   sectionvss.style.display = "none";
-  sectionhtml.style.display = "";
+  sectionhtml.style.display = "block";
   sectioncss.style.display = "none";
   sectionjs.style.display = "none";
   sectiongit.style.display = "none";
@@ -46,7 +46,7 @@ btncss.addEventListener("click", () => {
   sectionnav.style.display = "none";
   sectionvss.style.display = "none";
   sectionhtml.style.display = "none";
-  sectioncss.style.display = "";
+  sectioncss.style.display = "block";
   sectionjs.style.display = "none";
   sectiongit.style.display = "none";
 });
@@ -57,7 +57,7 @@ btnjs.addEventListener("click", () => {
   sectionvss.style.display = "none";
   sectionhtml.style.display = "none";
   sectioncss.style.display = "none";
-  sectionjs.style.display = "";
+  sectionjs.style.display = "block";
   sectiongit.style.display = "none";
 });
 
@@ -68,5 +68,5 @@ btngit.addEventListener("click", () => {
   sectionhtml.style.display = "none";
   sectioncss.style.display = "none";
   sectionjs.style.display = "none";
-  sectiongit.style.display = "";
+  sectiongit.style.display = "block";
 });
