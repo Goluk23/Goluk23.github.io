@@ -551,6 +551,24 @@
           <p>Exemple: body {background: red;}</p>
         </li>
         <li>
+          <h3>Utilisation des Variables</h3>
+          <ul>
+            <li>
+              <h4>Déclaration des variables</h4>
+              <h5>
+                Mettre :root {--nomVariable:###} en début de CSS (mais après
+                l'import des fonts)
+              </h5>
+              <p>Exemple: :root { --colorNAV: rgb(35, 154, 15);}</p>
+            </li>
+            <li>
+              <h4>Appel des variables dans le reste du CSS</h4>
+              <h5>var:(--nomVariable)</h5>
+              <p>Exemple: #btn-nav {background: var(--colorNAV);}</p>
+            </li>
+          </ul>
+        </li>
+        <li>
           <h3>Utilisation de CSS sur du texte (H1 dans ce cas)</h3>
           <ul>
             <li>
